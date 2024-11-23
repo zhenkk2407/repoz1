@@ -13,7 +13,12 @@ height: 600px;
 h1 {
 text-align: center;
 font-size: 55;
+<<<<<<< HEAD
 color: #754135;
+=======
+color: blueviolet;
+
+>>>>>>> paragraphs
 }
 
 h2 {
