@@ -4,14 +4,18 @@ body{
 
 *{
     font-family: Bookman Old Style;
+    font-weight: normal;
+    color: #180e0b;
 }
+
 
 .img{
     float: right;
     margin-right: 100px;
     width: 900px;
     height: 600px;
-
+    border-radius:20%;
+    border: thick double #9f7c4f;
 }
 
 h1 {
@@ -31,11 +35,6 @@ h2:not(.special){
     font-size: 22px;
 }
 
-ul {
-    color: rgb(128, 95, 53);
-    font-size: 20px;
-    }
-
 p ~ h2 {
     color: rgb(128, 95, 53);
     font-size: 22px;
@@ -43,13 +42,21 @@ p ~ h2 {
 
 ul {
     font-size: 20px;
+    color: rgb(128, 95, 53);
+    line-height: 120%
     }
 
 p{
     font-size: 20px;
     text-indent: 25px;
+    line-height: 120%
 }
 
 a:hover {
     color: #754135;
   }
+
+a{
+    text-decoration: none;
+    color: rgb(41, 69, 155);
+}
