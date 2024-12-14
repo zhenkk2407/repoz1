@@ -1,11 +1,18 @@
 body{
     background-color: #F5DEB3;
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Установить высоту на всю страницу */
+    width: 100%;  
+    position: relative;
 }
 
 *{
     font-family: Bookman Old Style;
     font-weight: normal;
     color: #180e0b;
+    font-size: 20px;
+    box-sizing: border-box;
 }
 
 
@@ -14,25 +21,36 @@ body{
     margin-right: 100px;
     width: 900px;
     height: 600px;
+    max-width: 100%;
     border-radius:20%;
     border: thick double #9f7c4f;
+    position: relative; /* Относительное позиционирование */
+    z-index: 1; /* Выше большинства элементов */
 }
 
 h1 {
     text-align: center;
     font-size: 55px;
     color: #754135;
+    max-width: 100%;
+    margin: 20px auto;
+    width: 90%; /* Установим максимальную ширину */
 }
 
 h2:not(.special){
     margin-left: 50px;
     font-size: 27px;
     color: #754135;
+    max-width: 90%;
+    width: auto;
+    min-height: 40px; /* Минимальная высота заголовка */
 }
 
 .special{
     margin-left: 50px;
     font-size: 22px;
+    width: auto;
+    min-height: 30px;
 }
 
 p ~ h2 {
@@ -41,22 +59,28 @@ p ~ h2 {
     }
 
 ul {
-    font-size: 20px;
     color: rgb(128, 95, 53);
-    line-height: 120%
+    line-height: 120%;
+    max-width: 90%;
+    margin-left: 10px;
     }
 
 p{
-    font-size: 20px;
     text-indent: 25px;
-    line-height: 120%
+    line-height: 120%;
+    max-width: 90%;
+    width: auto;
+    margin: 20px 10px;
+    height: auto; 
+}
+
+
+a{
+    text-decoration: none;
+    color: rgb(41, 69, 155);
+    position: relative;
 }
 
 a:hover {
     color: #754135;
   }
-
-a{
-    text-decoration: none;
-    color: rgb(41, 69, 155);
-}
