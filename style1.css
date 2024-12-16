@@ -2,18 +2,33 @@ body{
     background-color: #F5DEB3;
     margin: 0;
     padding: 0;
-    height: 100%; /* Установить высоту на всю страницу */
+    height: 100%; 
     width: 100%;  
     position: relative;
 }
 
 *{
-    font-family: Bookman Old Style;
+    font-family: "Vollkorn", serif;
     font-weight: normal;
     color: #180e0b;
-    font-size: 20px;
+    font-size: 21px;
     box-sizing: border-box;
 }
+
+.content {
+    margin-top: 80px;
+}
+
+.fixed-banner {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background-color: #8b4513;
+    color: white;
+    text-align: center;
+    padding: 8px;
+    z-index: 2;
+  }
 
 
 .img{
@@ -24,32 +39,33 @@ body{
     max-width: 100%;
     border-radius:20%;
     border: thick double #9f7c4f;
-    position: relative; /* Относительное позиционирование */
-    z-index: 1; /* Выше большинства элементов */
+    position: relative; 
+    z-index: 1; 
 }
 
 h1 {
     text-align: center;
     font-size: 55px;
     color: #754135;
-    max-width: 100%;
+    max-width: 600px;
     margin: 20px auto;
-    width: 90%; /* Установим максимальную ширину */
+    width: 90%; 
 }
 
 h2:not(.special){
     margin-left: 50px;
     font-size: 27px;
     color: #754135;
-    max-width: 90%;
+    max-width: 200px;
     width: auto;
-    min-height: 40px; /* Минимальная высота заголовка */
+    min-height: 40px;
 }
 
 .special{
     margin-left: 50px;
     font-size: 22px;
     width: auto;
+    max-width: 200px;
     min-height: 30px;
 }
 
@@ -62,14 +78,15 @@ ul {
     color: rgb(128, 95, 53);
     line-height: 120%;
     max-width: 90%;
+    width: 400px;
     margin-left: 10px;
     }
 
 p{
     text-indent: 25px;
     line-height: 120%;
-    max-width: 90%;
-    width: auto;
+    max-width: 80%;
+    width: 500px;
     margin: 20px 10px;
     height: auto; 
 }
