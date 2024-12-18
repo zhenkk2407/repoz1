@@ -1,22 +1,41 @@
 body{
     background-color: #F5DEB3;
+    background-image: url("ajy3.png");
+    background-size: cover; 
+
     margin: 0;
-    padding: 0;
-    height: 100%; 
-    width: 100%;  
+    padding: 0; 
     position: relative;
+    /* height: 30vh; */
+    width: 100vw;
 }
 
 *{
     font-family: "Vollkorn", serif;
     font-weight: normal;
     color: #180e0b;
-    font-size: 21px;
+    font-size: 1.2rem;
     box-sizing: border-box;
 }
 
 .content {
-    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10vh auto 5vh;
+}
+
+.product-section {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; 
+    gap: 2em; 
+}
+
+.product-section-ul {
+    display: flex;
+    flex-direction: column;
+    max-width: 60%; 
 }
 
 .fixed-banner {
@@ -26,17 +45,20 @@ body{
     background-color: #8b4513;
     color: white;
     text-align: center;
-    padding: 8px;
+    padding: 1em;
     z-index: 2;
   }
 
 
 .img{
-    float: right;
-    margin-right: 100px;
-    width: 900px;
-    height: 600px;
-    max-width: 100%;
+    flex: 2 1 auto; 
+    max-width: 100%; 
+    margin: 0; 
+    align-self: flex-start; /* Выравниваем по верхнему краю */
+    margin-right: 5%;
+    width: 60vw;
+    height: auto;
+    
     border-radius:20%;
     border: thick double #9f7c4f;
     position: relative; 
@@ -44,57 +66,62 @@ body{
 }
 
 h1 {
+    font-size: 2.5rem;
     text-align: center;
-    font-size: 55px;
+    margin: 0 auto;
     color: #754135;
-    max-width: 600px;
-    margin: 20px auto;
-    width: 90%; 
+    max-width: 50ch;
+    width: 70%; 
+    white-space: nowrap; /* Отключаем перенос строки */
 }
 
 h2:not(.special){
-    margin-left: 50px;
-    font-size: 27px;
+    margin-left: 2em;
+    margin-bottom: 0.5em;
+    font-size: 1.5rem;
     color: #754135;
-    max-width: 200px;
+    max-width: 25ch;
     width: auto;
-    min-height: 40px;
+    min-height: 5vh;
 }
 
 .special{
-    margin-left: 50px;
-    font-size: 22px;
+    margin-left: 2em;
+    font-size: 1.3rem;
     width: auto;
-    max-width: 200px;
-    min-height: 30px;
+    max-width: 20ch;
+    min-height: 4vh;
 }
 
 p ~ h2 {
     color: rgb(128, 95, 53);
-    font-size: 22px;
+    font-size: 1.3rem;
     }
 
 ul {
+    list-style-type: disc;
     color: rgb(128, 95, 53);
     line-height: 120%;
     max-width: 90%;
-    width: 400px;
-    margin-left: 10px;
+    width: 25vw;
+    margin-left: 2em;
+    margin-top: 1em;
     }
 
 p{
-    text-indent: 25px;
+    flex: 1 1 auto;
+    text-indent: 2em;
     line-height: 120%;
-    max-width: 80%;
-    width: 500px;
-    margin: 20px 10px;
+    width: 80%;
+    max-width: 90%;
+    margin:  2vh 1em;
     height: auto; 
 }
 
 
 a{
     text-decoration: none;
-    color: rgb(41, 69, 155);
+    color: hsl(225, 58%, 38%);
     position: relative;
 }
 
