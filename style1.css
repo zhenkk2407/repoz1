@@ -52,13 +52,12 @@ body{
 
 .img{
     flex: 2 1 auto; 
-    max-width: 100%; 
-    margin: 0; 
+    max-width: 90%; 
     align-self: flex-start; /* Выравниваем по верхнему краю */
     margin-right: 5%;
-    width: 60vw;
+    width: 70vw;
     height: auto;
-    
+    object-fit: cover;
     border-radius:20%;
     border: thick double #9f7c4f;
     position: relative; 
