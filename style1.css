@@ -3,9 +3,15 @@
     background-color: #754135; 
     color: #fff; 
 }
+input::placeholder, textarea::placeholder {
+    color: #9f7c4f;
+    font-style: italic;
+}
+input:required {
+    background-color: #fdecd2;
+}
 
 input, textarea {
-
     color: #180e0b;
     background-color: #F5DEB3;
     border: 2px solid #754135;
@@ -17,7 +23,6 @@ input, textarea {
 }
 
 select{
-
     color: #180e0b;
     background-color: #F5DEB3;
     border: 2px solid #754135;
@@ -47,14 +52,8 @@ input:focus, textarea:focus, select:focus {
     box-shadow: 0 0 5px rgba(139, 69, 19, 0.5);
 }
 
-input::placeholder, textarea::placeholder {
-    color: #9f7c4f;
-    font-style: italic;
-}
 
-input:required {
-    background-color: #fdecd2;
-}
+
 
 button {
     font-size: 1rem;
@@ -91,10 +90,30 @@ body{
     width: 100vw;
     display: grid;
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 30px;
     justify-items: center;
 }
-
+.content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px; 
+    justify-self: center;
+    margin: 10vh auto 5vh;
+    grid-area: 1 / 1 / -1 / -1;
+}
+p{
+    justify-self: center;
+    text-indent: 2em;
+    line-height: 120%;
+    width: 80%;
+    max-width: 90%;
+    margin:  2vh 1em;
+    height: auto; 
+}
+footer p{
+    text-align: center;
+    white-space: nowrap;
+}
 *{
     font-family: "Vollkorn", serif;
     font-weight: normal;
@@ -102,14 +121,36 @@ body{
     font-size: 1.2rem;
     box-sizing: border-box;
 }
+.fixed-banner {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background-color: rgba(139, 69, 19, 0.8);
+    color: white;
+    text-align: center;
+    padding: 1em;
+    z-index: 2;
+  }
 
-.content {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 20px; 
-    justify-content: space-between;
-    margin: 10vh auto 5vh;
-    grid-area: 1 / 1 / -1 / -1;
+.img{
+    border-radius:20%;
+    border: thick double #9f7c4f;
+    max-width: 90%; 
+    align-self: flex-start; /* Выравниваем по верхнему краю */
+    margin-right: 5%;
+    width: 70vw;
+    height: auto;
+    object-fit: cover;
+    position: relative; 
+    z-index: 1; 
+    background-color: rgba(227, 176, 81, 0.5); 
+
+}
+a{
+    text-decoration: none;
+    color: hsl(38, 24%, 50%);
+    position: relative;
+    transition: color 0.3s ease;
 }
 
 .product-section {
@@ -125,36 +166,13 @@ body{
     max-width: 60%; 
 }
 
-.fixed-banner {
-    position: fixed;
-    top: 0px;
-    width: 100%;
-    background-color: rgba(139, 69, 19, 0.8);
-    color: white;
-    text-align: center;
-    padding: 1em;
-    z-index: 2;
-  }
+
 
 figure {
     flex: 2 1 auto; 
 }
 
-.img{
-    
-    max-width: 90%; 
-    align-self: flex-start; /* Выравниваем по верхнему краю */
-    margin-right: 5%;
-    width: 70vw;
-    height: auto;
-    object-fit: cover;
-    border-radius:20%;
-    border: thick double #9f7c4f;
-    position: relative; 
-    z-index: 1; 
-    background-color: rgba(227, 176, 81, 0.5); 
 
-}
 .img2{
     width: 100%;
     height: 100%;
@@ -202,6 +220,7 @@ ul {
     width: 25vw;
     margin-left: 2em;
     margin-top: 1em;
+    line-height: 1.1em;
     }
 ul li:nth-child(odd) {
     background-color: #f4d8ab;
@@ -213,23 +232,10 @@ ul li:nth-child(even) {
     color: #8b4513;
 }
 
-p{
-    flex: 1 1 auto;
-    text-indent: 2em;
-    line-height: 120%;
-    width: 80%;
-    max-width: 90%;
-    margin:  2vh 1em;
-    height: auto; 
-}
 
 
-a{
-    text-decoration: none;
-    color: hsl(38, 24%, 50%);
-    position: relative;
-    transition: color 0.3s ease;
-}
+
+
 
 a:hover {
     color: #754135;
